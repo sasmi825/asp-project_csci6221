@@ -10,8 +10,8 @@ from langchain.chains.question_answering import load_qa_chain
 from .memory import CustomMemory
 from .file_processing import process_file  # Import the file processing function
 
-# ToDo: add Open API key 
-openai_api_key = "putAPIkey here"
+# ToDo: add Open API key for things to work
+openai_api_key = "putAPIkeyhere"
 
 log = logging.getLogger(__name__)
 
@@ -46,7 +46,7 @@ def search(question: str, document_url: str) -> dict[str, Any]:
     # LLM to call.
     log.info("Creating an LLM to call.")
     llm = ChatOpenAI(
-        openai_api_key="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",
+        openai_api_key="ADD Openai api key here",
         temperature=0,
         model="gpt-4"
     )
