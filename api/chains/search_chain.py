@@ -10,8 +10,9 @@ from langchain.chains.question_answering import load_qa_chain
 from .memory import CustomMemory
 from .file_processing import process_file  # Import the file processing function
 
-# ToDo: Open API key delete
-openai_api_key = "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"
+# ToDo: add Open API key 
+openai_api_key = "putAPIkey here"
+
 log = logging.getLogger(__name__)
 
 def create_prompt() -> PromptTemplate:
